@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+:root{
+
+    --ff-head : 'Ubuntu', sans-serif;
+    --ff-label : 'Rakkas', cursive;
+
+}
+
+body{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #1D3557;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    color:white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.section{
+    font-size: 2.2em;
+    font-family: var(--ff-head);
+}
+
+.label{
+    font-family: var(--ff-label);
+    font-size: 1.3em;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.input{
+    width: 300px;
+    height: 38px;
+    font-size: 18px;
+    background-color: #457B9D;
+    border: none;
+    opacity: 0.5;
+    color: white;
+    padding-left: 10px;
+}
+
+.feedback{
+    color: #FFBA08;
+}
+
+.table{
+
+
+    &--head{
+        font-family: var(--ff-head);
+        font-size: 1.2em;
+    }
+}
+
+th{
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1D3557;
+    color: white;
+    width: 80px;
+}
+
+td{
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #457B9D;
+    width: 80px;
+}
+
+.style{
+    width: 300px;
+    margin: 1em;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: var(--ff-head);
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.delete{
+    cursor: pointer;
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+:root{
+    --ff-primary : 'Ubuntu', sans-serif;
+    --ff-secondary : 'Rakkas', cursive;
+    --color-primary : #457B9D;
+    --color-secondary : #A8DADC;
+}
+
+h3,h4{
+    margin: 0px;
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.page{
+    width: 900px;
+    border: 4px solid black;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+// ---- header -----
+.header{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+
+    &--logo{
+        object-fit: contain;
+    }
+
+}
+
+.header--caption{
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-left: 12px;
+
+    &__one{
+        font-family: var(--ff-primary);
+        font-size: 2em;
+    }
+
+    &__two{
+        font-family: var(--ff-secondary);
+        font-size: 1.02em;
+        margin-top: 8px;
+        letter-spacing: 2px;
+    }
+
+}
+
+// ---student information---
+
+.general{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    &--one , &--two {
+        width: 40%;
+    }
+}
+
+.general--font{
+    padding: 15px;
+    border: 1px solid var(--color-primary);
+    margin: 15px;
+    font-family: var(--ff-primary);
+    font-size: 1.2em;
+
+    &__one{
+        color: var(--color-primary);
+        margin-left: 5px;
+    }
+
+    &__two{
+        margin-left: 5px;
+    }
+}
+
+// ---table---
+
+
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0;
+
+
+    &--one{
+        width: 55%;
+        border-collapse: collapse;
+        margin-right: 10px;
+    }
+
+    &--two{
+        width: 30%;
+        margin-left: 10px;
+        border-collapse: collapse;
+    }
+}
+
+tr:nth-child(even){
+    background-color: var(--color-secondary);
+}
+
+td{
+    padding:10px;
+}
+
+
+.table--head{
+    font-size: 1.2em;
+    font-family: var(--ff-primary);
+    background-color: var(--color-primary);
+
+    & td{
+        padding: 10px;
+        
+    }
+}
+
+.textarea{
+    width: 30%;
+    border: 1px solid var(--color-primary);
+    margin-left: 10px;
+
+    &--one{
+        height: 154px;
+    }
+
+    &--two{
+        height: 79px;
+    }
+}

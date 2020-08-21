@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report-Card</title>
+    <link rel="stylesheet" href="css/next.css">
+    <link rel="shortcut icon" href="next.html" type="image/x-icon">
+</head>
+<body onload="onSecondLoad()">
+    
+    <section class="page">
+        <!-- header -->
+        <header class="header">
+            <img src="img/Mortarboard free icon 1logo.png" alt="logo" class="header--logo">
+            <div class="header--caption">
+                <h3 class="header--caption__one">student report</h3>
+                <h4 class="header--caption__two">s.t  judes high  school</h4>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+            <div class="general">
+                <div class="general--one">
+                    <div >
+                        <h4 class="general--font">Name:
+                            <span class="general--font__one report">
+    
+                            </span>
+                        </h4>
+                    </div>
+                    <div >
+                        <h4 class="general--font">Roll No:
+                            <span class="general--font__one repo">
+    
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+                <div class="general--two">
+                    <div >
+                        <h4 class="general--font">Class:
+                            <span class="general--font__two">
+                                IX<sup>th</sup>
+                            </span>
+                        </h4>
+                    </div>
+                    <div >
+                        <h4 class="general--font">Division:
+                            <span class="general--font__two">
+                                B
+                            </span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- table -->
+
+        <div class="table">
+            <table class="table--one">
+                <tr class="table--head">
+                    <td>Subject</td>
+                    <td>Marks</td>
+                    <td>Out of</td>>
+                </tr>
+                <tbody class="mark"></tbody>
+                <tr class="table--head">
+                    <td>Total Marks:</td>
+                    <td class="marksObtain">
+
+                    </td>
+                    <td class="maxMarks">
+
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table--two">
+                <tr class="table--head">
+                    <td>Grades</td>
+                    <td>Range</td>
+                </tr>
+                <tr>
+                    <td>Distinction</td>
+                    <td>75-100</td>
+                </tr>
+                <tr>
+                    <td>First Class</td>
+                    <td>60-74</td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td>Pass</td>
+                </tr>
+                <tr>
+                    <td>Fail</td>
+                    <td>>35</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table class="table--one">
+                <tr class="table--head">
+                    <td>Attendance</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Number of days present</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>number no days absent</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>total attendance</td>
+                    <td>22/30</td>
+                </tr>
+            </table>
+            <textarea name="tc"  class="textarea textarea--one" placeholder="teacher's comment"></textarea>
+        </div>
+
+        <div class="table">
+            <table class="table--one">
+                <tr class="table--head">
+                    <td>Report</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Percentage:</td>
+                    <td class="percentage"></td>
+                </tr>
+                <tr>
+                    <td>Grades:</td>
+                    <td class="grade"></td>
+                </tr>
+            </table>
+            <textarea name="ps" placeholder="parent's signature" class="textarea textarea--two"></textarea>
+        </div>
+
+    </section>
+
+    <script src="js/vali.js"></script>
+</body>
+
+</html>

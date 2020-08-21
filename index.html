@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-fill-up</title>
+    <script src="https://use.fontawesome.com/c50907a168.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="index.html" type="image/x-icon">
+</head>
+<body onload="onLoad()">
+
+
+    <div class="box">
+      <div class="container">
+        <h2 class="section">Form-Fill</h2>
+      
+        
+          
+      <form action="next.html" class="Myform">
+
+    
+        <div class="group">
+          <label for="name" class="label">Name:</label>
+          <input class="input" type="text" id="name">
+          <div class="feedback">-only alphabets range[4-25]</div>
+        </div>
+        
+  
+        <div class="group">
+          <label for="roll" class="label">Roll No:</label>
+        <input class="input" type="text" id="rollNo">
+        <div class="feedback">-four capital alphabets followed by 3-6 digit integer</div>
+        <div class="feedback">eg: CEOP123</div>
+        </div>
+        
+  
+        <div class="group">
+          <label for="subject" class="label">Subject:</label>
+        <input class="input" type="text"  id="subject" >
+        <div class="feedback">-only alphabets range[4-15]</div>
+        </div>
+        
+  
+        <div class="group">
+          <label for="marks" class="label">Marks:</label>
+        <input class="input"  id="marks">
+        <div class="feedback">-marks obtained should be less than out of marks</div>
+        </div>
+        
+  
+        <div class="group">
+          <label for="outOf" class="label">Out of:</label>
+        <select id="outOf" class="input">
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <div class="feedback">*try not to repeat the same subject name</div>
+        </div>
+
+  
+          <div class="MyTable table">
+          <table id= "MarksTable">
+              <tr class="table--head">
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>out of</th>
+              </tr>
+            </table>
+          </div>
+            <br>
+            
+            <button type="button" onclick="onAdd()" class="style">Add</button>
+            
+            <button type="button" onclick="onDelete()" class="style">Delete</button>
+  
+          <button type="button"  onclick="onSubmit()" class="style">Submit</button>
+      </form>
+  
+      </div>
+    </div>
+
+    <script src="js/vali.js"></script>
+</body>
+</html>
