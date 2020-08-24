@@ -45,13 +45,12 @@ function onAdd() {
   cell4.className  = 'can';
     
   arrMarks.push([subject,marks,outOf]);
+    
+  form.subject.value = "";
+  form.marks.value = "";
   }
 
 }
-
-function onDelete(){
-  MarksTable.deleteRow(-1);
-   }
 
 function onSubmit() {
   const namePattern = /^[a-zA-Z ]{4,25}$/;
